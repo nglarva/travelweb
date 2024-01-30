@@ -1,1 +1,1 @@
-web gunicorn travelweb.wsgi:application --log-file -
+web: gunicorn travelweb.wsgi
