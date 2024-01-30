@@ -111,9 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-#STATIC_ROOT = "./travel/static/assets"
-STATIC_ROOT  = os.path.join(BASE_DIR,'travel/static/assets')
-STATICFILES_DIRS = (os.path.join(BASE_DIR,'travel/static/assets'), )
+#STATIC_ROOT = "/travel/static/assets"
+STATIC_ROOT  = os.path.join(BASE_DIR,'travel\\static')
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'travel\\static'), )
 
 TIME_ZONE = "UTC"
 
@@ -134,3 +134,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 django_heroku.settings(locals())
 print("base dir path", BASE_DIR)
+print("staticpath", STATICFILES_DIRS)
+print("statis", STATIC_ROOT)
