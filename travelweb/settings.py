@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en-us"
 
 #STATIC_ROOT = "travel/static/assets"
-STATIC_ROOT  = os.path.join(BASE_DIR,'staticfiles')
+#STATIC_ROOT  = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'), )
 
 TIME_ZONE = "UTC"
